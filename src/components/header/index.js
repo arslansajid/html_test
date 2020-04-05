@@ -1,16 +1,11 @@
 import React, { useState } from 'react';
 import {
-    Collapse,
     Navbar,
-    NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
     NavLink,
 } from 'reactstrap';
 import './index.css';
-import Logo from "../../assets/images/logo.svg";
-import { ReactSVG } from 'react-svg';
 import Drawer from '@material-ui/core/Drawer';
 
 const Header = () => {
