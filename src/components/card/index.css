@@ -1,0 +1,24 @@
+.Card {
+    /* width: 500px; */
+    height: 500px;
+    margin-bottom: 96px;
+}
+
+.Card .card-image {
+    width: 100%; /* or any custom size */
+    height: 100%; 
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 568px) {
+    .Card {
+        width: 261px;
+        height: 261px;
+        margin-bottom: 36.7px;
+    }
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

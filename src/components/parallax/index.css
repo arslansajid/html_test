@@ -1,0 +1,35 @@
+.Parallax {
+    /* The image used */
+    background-image: url("../../assets/images/test_image.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Parallax .heading-container {
+      width: 100%;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .Parallax .heading {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+
+  @media only screen and (max-width: 568px) {
+    .Parallax .heading {
+        font-size: 30px;
+      }
+  }
