@@ -40,7 +40,7 @@ const Header = () => {
                     <use xlinkHref={`${require('../../assets/images/logo.svg')}#logo`}></use>
                 </svg>
                 <div onClick={() => toggle()}>
-                    <img src={require("../../assets/images/burger.png")} />
+                    <img src={require("../../assets/images/burger.png")} alt="logo" />
                 </div>
             </Navbar>
 
