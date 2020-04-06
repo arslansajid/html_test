@@ -3,7 +3,7 @@
     background-image: url("../../assets/images/test_image.jpg");
   
     /* Set a specific height */
-    min-height: 500px;
+    min-height: 70vh;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -14,16 +14,16 @@
 
   .Parallax .heading-container {
       width: 100%;
-      min-height: 500px;
+      min-height: 70vh;
       display: flex;
       align-items: center;
       justify-content: center;
   }
 
   .Parallax .heading {
-    font-size: 50px;
+    font-size: 120px;
     color: white;
-    font-weight: bold;
+    font-weight: 800;
     font-family: sans-serif;
   }
 

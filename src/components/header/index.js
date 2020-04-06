@@ -7,6 +7,7 @@ import {
 } from 'reactstrap';
 import './index.css';
 import Drawer from '@material-ui/core/Drawer';
+import SvgLogo from "../SvgLogo" 
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ const Header = () => {
 
     return (
         <div className="Header">
-            <Navbar className="d-lg-flex d-md-flex d-none" light expand="md">
+            {/* <Navbar className="d-lg-flex d-md-flex d-none" light expand="md">
                     <Nav className="mr-auto ml-auto" navbar>
                         <NavItem>
                             <NavLink href="/components/">Home</NavLink>
@@ -22,9 +23,15 @@ const Header = () => {
                         <NavItem>
                             <NavLink >About</NavLink>
                         </NavItem>
-                        <svg className="desktop-logo" viewBox="0 65 300 200">
+                        <svg viewBox="0 65 300 200">
                             <use xlinkHref={`${require('../../assets/images/logo.svg')}#logo`}></use>
                         </svg>
+                        <div>
+                        <SvgLogo
+                            width={"300px"}
+                            fill={'#fff'}
+                        />
+                        </div>
                         <NavItem>
                             <NavLink href="/components/">Service</NavLink>
                         </NavItem>
@@ -32,11 +39,24 @@ const Header = () => {
                             <NavLink >Contact</NavLink>
                         </NavItem>
                     </Nav>
-            </Navbar>
+            </Navbar> */}
+        
+        <div className="nav-container justify-content-center">
+            <div className="nav-wrapper">
+                <a>HOME</a>
+                <a>ABOUT</a>
+                <SvgLogo
+                    width={"300px"}
+                    fill={'#fff'}
+                />
+                <a>HOME</a>
+                <a>ABOUT</a>
+            </div>
+        </div>
 
             {/* for mobiles only */}
             <Navbar className="mobile-header d-none" color="faded" light>
-                <svg className="mobile-logo" preserveAspectRatio="none" viewBox="0 0 300 200" >
+                <svg viewBox="0 0 300 200" >
                     <use xlinkHref={`${require('../../assets/images/logo.svg')}#logo`}></use>
                 </svg>
                 <div onClick={() => toggle()}>

@@ -4,13 +4,14 @@
 
 .main-heading {
   font-size: 48px;
+  font-weight: 800;
   line-height: 99px;
-  margin-top: 131px;
+  margin-top: 70px;
 }
 
 .main-sub-heading {
   font-size: 30px;
-  line-height: 99px;
+  font-weight: 400;
   margin-bottom: 100.6px;
 }
 

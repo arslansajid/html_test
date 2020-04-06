@@ -12,8 +12,8 @@ const App = () => {
       <Header />
       <Parallax />
       <div className="main-heading">I am open sans extra bold 48px</div>
-      <div className="main-sub-heading d-none d-lg-block d-md-block">Please follow all directions,make fonts the same size, respect margins and spacing.</div>
-      <div className="main-sub-heading d-lg-none d-md-none d-block">I am open sans extra bold 48px</div>
+      <p className="main-sub-heading d-none d-lg-block d-md-block">Please follow all directions,make fonts the same size, respect margins and spacing.</p>
+      <p className="main-sub-heading d-lg-none d-md-none d-block">I am open sans extra bold 48px</p>
       <div className="px">
       <Container fluid={true}>
         <Row noGutters={true} className="justify-content-center">
