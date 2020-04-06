@@ -58,7 +58,7 @@ const Header = () => {
             <div className="mobile-header d-none">
                 <div className="nav-wrapper-mobile">
                     <SvgLogo
-                        width={"300px"}
+                        width={"150px"}
                         fill={'#fff'}
                     />
                     <div className="mr-4" onClick={() => toggle()}>
