@@ -41,28 +41,31 @@ const Header = () => {
                     </Nav>
             </Navbar> */}
         
-        <div className="nav-container justify-content-center">
-            <div className="nav-wrapper">
-                <a>HOME</a>
-                <a>ABOUT</a>
-                <SvgLogo
-                    width={"300px"}
-                    fill={'#fff'}
-                />
-                <a>HOME</a>
-                <a>ABOUT</a>
-            </div>
-        </div>
-
-            {/* for mobiles only */}
-            <Navbar className="mobile-header d-none" color="faded" light>
-                <svg viewBox="0 0 300 200" >
-                    <use xlinkHref={`${require('../../assets/images/logo.svg')}#logo`}></use>
-                </svg>
-                <div onClick={() => toggle()}>
-                    <img src={require("../../assets/images/burger.png")} alt="logo" />
+            <div className="nav-container d-lg-flex d-md-flex d-none">
+                <div className="nav-wrapper">
+                    <a>HOME</a>
+                    <a>ABOUT</a>
+                    <SvgLogo
+                        width={"300px"}
+                        fill={'#fff'}
+                    />
+                    <a>HOME</a>
+                    <a>ABOUT</a>
                 </div>
-            </Navbar>
+            </div>
+            
+            {/* for mobiles only */}
+            <div className="mobile-header d-none">
+                <div className="nav-wrapper-mobile">
+                    <SvgLogo
+                        width={"300px"}
+                        fill={'#fff'}
+                    />
+                    <div className="mr-4" onClick={() => toggle()}>
+                        <img src={require("../../assets/images/burger.png")} alt="logo" />
+                    </div>
+                </div>
+            </div>
 
             <Drawer anchor={"right"} open={isOpen} onClose={() => toggle()} className="sidebar">
                 <Nav navbar>
