@@ -16,10 +16,11 @@
         width: 261px;
         height: 261px;
         margin-bottom: 36.7px;
+        margin-right: unset;
     }
-    /* .card-container {
+    .card-container {
         display: flex;
         justify-content: center;
         align-items: center;
-    } */
+    }
 }
