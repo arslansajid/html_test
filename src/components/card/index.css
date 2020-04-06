@@ -1,7 +1,8 @@
 .Card {
-    /* width: 500px; */
+    width: 500px;
     height: 500px;
     margin-bottom: 96px;
+    margin-right: 50px;
 }
 
 .Card .card-image {
@@ -16,9 +17,9 @@
         height: 261px;
         margin-bottom: 36.7px;
     }
-    .card-container {
+    /* .card-container {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } */
 }
